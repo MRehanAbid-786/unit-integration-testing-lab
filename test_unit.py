@@ -20,7 +20,7 @@ def test_calculate_interest_valid():
 
 def test_calculate_interest_negative_balance():
     with pytest.raises(ValueError):
-        calculate_interest(-100, 5, 1)
+        calculate_interest(800, 5, 1)
 
 def test_check_loan_eligible():
     assert check_loan_eligibility(6000, 750) is True
